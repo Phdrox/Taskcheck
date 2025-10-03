@@ -17,11 +17,18 @@ de configuração de usuário.
 [X] Atualizar dados de usário ou Deletar conta
 [X] Chat com IA (Inserir chave do Gemini IA) no arquivo .env
 
-## Images
-![Task](/TaskcheckImages/Captura de Tela (10).png)
-
-
 ## Sobre a Aplicação
-Ela foi realizada no intuto de ser um projeto pessoal, porém, com futuras atualizações para correção de bugs,
-adição de novas funcionalidades e seguir com o processo de metodologia ágil Kanban, assim seguindo com o processo
+Ela foi realizada no intuto de ser um projeto pessoal, porém, com futuras atualizações para correção de bugs,adição de novas funcionalidades e seguir com o processo de metodologia ágil Kanban, assim seguindo com o processo
 de controle de versões. 
+
+## Images
+![Task1](/TaskcheckImages/Captura_1).png)
+![Task2](/TaskcheckImages/Captura_2).png)
+![Task3](/TaskcheckImages/Captura_3).png)
+![Task4](/TaskcheckImages/Captura_4).png)
+![Task5](/TaskcheckImages/Captura_5).png)
+![Task6](/TaskcheckImages/Captura_6).png)
+![Task7](/TaskcheckImages/Captura_7).png)
+![Task8](/TaskcheckImages/Captura_8).png)
+![Task9](/TaskcheckImages/Captura_9).png)
+
