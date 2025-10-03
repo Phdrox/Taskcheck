@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+:root{
+    --primary-color:#2C856B;
+    --second-color:#21302C;
+    --white-color:#FEFEFE;
+    --black-color:#000000;
+    --red-color:#EB211D;
+    --success-color:#00cc11;
+    --font-text:'Darker Grotesque', serif;
+}

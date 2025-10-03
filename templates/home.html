@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/home.css" type="text/css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    {% if session.get('user') %}
+    <ul>
+        <div class="list-menu">
+            <li><a href="{{url_for('tasks.home')}}"><img src="/static/images/TaskCheck.png" alt="" width="200" height="30"></li></a>
+            <li><a href="{{url_for('tasks.chatia')}}">Chat</a></li>
+            <li><a href="{{url_for('tasks.tasks')}}">Tarefas</a></li>
+        </div>
+        <li class="list-session">
+            <a href="{{url_for('tasks.user')}}" id="link-user"><p>{{session['user']['name']}}</p></a>
+            <form action="/logout" method="get">
+              <button type="submit" id="button-logout">Sair</button>
+            </form>
+        </li>
+    </ul>
+   
+   {% block content %}
+    <div class="home-page">
+        <a href="{{url_for('tasks.chatia')}}">Chat</a>
+        <a href="{{url_for('tasks.tasks')}}">Tarefas</a>
+    </div>
+   {% endblock %}
+   {% else %}
+     <p>Logue</p>
+    {% endif%}
+</body>
+
+
+</html>

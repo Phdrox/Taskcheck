@@ -1,0 +1,117 @@
+@import url(./main.css);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding-block: 0.6rem;
+    background-color: var(--white-color);
+    box-shadow: 0 0 0.5rem var(--black-color);
+    
+    li{
+        font-family: var(--font-text);
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: var(--second-color);
+        transition: 0.2s;
+    };
+   
+    .list-menu{
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        
+        a{  text-decoration: none;
+            color: var(--second-color);
+            transition: 0.2s;
+        };
+        a:hover{
+            color: var(--primary-color);
+        }
+
+    }
+    li:hover{
+        color: var(--primary-color);
+    };
+
+    form{
+        width: 20%;
+        #button-logout{
+            border: none;
+            padding: 0.5rem;
+            background-color: var(--second-color);
+            color: var(--white-color);
+            font-family: var(--font-text);
+            font-weight: 700;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            transition: 0.3s
+        };
+        #button-logout:hover{
+            background-color: var(--primary-color);
+        }
+    }
+
+    .list-session{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        
+        justify-content: end;
+        p{
+            width: 70%;
+        }
+        #link-user{
+            text-decoration: none;
+            color: var(--second-color);
+            transition: 0.2s;
+            width: 100%;
+        }
+        #link-user:hover{
+            color: var(--primary-color);
+        }
+    }
+    }
+    .home-page{
+        overflow: hidden !important;
+        background-image: url('../images/imageHome.png');
+        background-size: 100%;
+        background-position:100% 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100vw;
+        height:85vh;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+        a{
+            background-color: var(--white-color);
+            text-decoration: none;
+            padding: 3rem;
+            width: 10%;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            font-family: var(--font-text);
+            font-weight: 800;
+            color: var(--secondary-color);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        a:hover{
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+    }
+    

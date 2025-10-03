@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/register.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+      <form action="/register" class="form-register" method="POST">
+            {{sucess}}
+            {{warning}}
+            {{error}}
+            <h1>Registrar</h1>
+            <div class="box-input">
+                {% if error %}
+                <input type="text" name="user" placeholder="usuário" required style="border-color:var(--red-color);">
+                {%else %}
+                <input type="text" name="user" placeholder="usuário" required>
+                {% endif %}
+                <input type="text" name="name" placeholder="nome completo" required>
+                {% if error %}
+                <input type="email" name="email" placeholder="exemplo@gmail.com" required style="border-color:var(--red-color);"> 
+                {%else %}
+                <input type="email" name="email" placeholder="exemplo@gmail.com" required> 
+                {% endif %}
+                <input type="password" name="password" placeholder="senha" required>
+                <input type="password" name="confirmpassword" placeholder="confirmar senha" required>
+            </div>
+           
+            <button type="submit">Registrar-se</button>
+            
+            <a href="/">Já possui uma conta? Entre agora!</a>
+        </form>
+</body>
+</html>

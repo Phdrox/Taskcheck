@@ -1,0 +1,74 @@
+@import url('main.css');
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap:2rem;
+        padding: 2rem;
+        input{
+            border: 1px solid var(--second-color);
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        span{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            #button-delete{
+                background-color:var(--red-color);
+                border: none;
+                border-radius: 5px;
+                padding: 0.5rem;
+                color: var(--white-color);
+                transition: 0.5s;
+                cursor: pointer;
+                font-family: var(--font-text);
+                font-weight: 600;
+            }
+            #button-delete:hover{
+                background-color:#af0202;
+            }
+
+            button[type='submit']{
+                width: 40%;
+                background-color:var(--primary-color);
+                border: none;
+                border-radius: 5px;
+                padding: 0.5rem;
+                color: var(--white-color);
+                transition: 0.5s;
+                cursor: pointer;
+                font-family: var(--font-text);
+                font-weight: 600;
+            }
+            button[type='submit']:hover{
+                background-color:var(--second-color)
+            } 
+        }
+        .block-input{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            label{
+                background-color: var(--second-color);
+                color: var(--white-color);
+                font-family: var(--font-text);
+                font-weight: 600;
+                padding: 0.3rem;
+                padding-inline: 0.5rem;
+                margin: 0;
+                border-radius: 3px;
+
+            }
+        }  
+    }
+}

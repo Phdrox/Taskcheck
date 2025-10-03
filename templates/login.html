@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/login.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img-login">
+        <img src="static/images/TaskCheck.png" alt="">
+    </div>
+    
+    <form action="/auth" method="POST" class="form-login">
+        <div class="form-group">
+            {% if error %}
+               <p>{{error}}</p>
+            {% elif error_mail %}
+               <p>{{error_mail}}</p>
+            {% elif  success_mail %}
+               <p style="background-color: var(--success-color) !important;">{{success_mail}}</p>
+            {% endif %}
+            
+            <h1>Login</h1>
+            <div class="box-input">
+                {% if error %}
+                <input type="text" name="loginname" placeholder="usuário" required style="border-color:var(--red-color);">
+                <input type="password" name="loginpassword" placeholder="senha" required style="border-color:var(--red-color);">
+                {% else %}
+                <input type="text" name="loginname" placeholder="usuário" required>
+                <input type="password" name="loginpassword" placeholder="senha" required>
+                {% endif %}
+            </div>
+
+            <button type="submit">Entrar</button>
+            <a href="{{url_for('tasks.register')}}">Não tem conta? <strong>Registre-se</strong></a>
+            <button type="button" id="button-dialog-pass">Esqueceu a senha? Click aqui!</button>
+         
+        </div>
+    </form>
+    
+    <dialog id="dialog-pass">
+      <form id='dialog-form-pass' action="/sendcode" method="POST">
+            <input type="email" name='email_password' id='dialog-email-input' placeholder="Insira seu email aqui" required/>
+       <button type="submit"  id="email-validate">Enviar Token</button>
+      </form>
+    </dialog>
+     
+</body>
+<script src="static/functions/dialog_email.js"></script>
+</html>

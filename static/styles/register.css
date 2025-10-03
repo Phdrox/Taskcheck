@@ -1,0 +1,84 @@
+@import url(./main.css);
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-color: var(--second-color);
+}
+
+
+.form-register{
+        width: 30vw;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 0 0.5rem var(--black-color);
+        border-radius: 5px;
+        background-color: var(--white-color);
+        padding: 3rem;
+    button{
+        width: 15vw;
+        padding: 0.6rem;
+        background: var(--second-color);
+        color: var(--white-color);
+        border-radius: 5px;
+        border: none;
+        font-family: var(--font-text);
+        font-weight: 600;
+        font-size: 1.3em;
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 0 0 0.2rem var(--black-color);
+        
+    };
+    button:hover{
+        background-color: var(--primary-color);
+        
+    }
+    
+    a{
+        text-decoration: none;
+        color: var(--second-color);
+        font-family: var(--font-text);
+        font-size: larger;
+        font-weight: 600;
+        transition: 0.3s;
+        padding-top:1rem;
+    };
+    a:hover{
+        color: var(--primary-color);
+    };
+
+    h1{
+        color: var(--second-color);
+        font-family: var(--font-text);
+        font-weight: 700;
+        font-size: 3em;
+    }
+}
+
+.box-input{
+    width: 50%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        padding: 4rem;
+        input{
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            padding: 0.4rem;
+            border: 0.1rem solid var(--second-color);
+            font-family: var(--font-text);
+            font-weight: 600;
+            font-size: 1.3em;
+        };
+}

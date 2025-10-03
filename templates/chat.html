@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="static/styles/chat.css" type="text/css">
+</head>
+<body>
+    <section>
+        <form action="/chat" method="post" class="form-chat">
+            <div class="chat-history">
+            </div>
+            <div class="input-chat">
+                <button type="button" class="buttontrash">&#128465;</button>
+                <input type="text" name="question_chat" placeholder="Insira sua dúvida" id="inputchat">
+                <button type="submit" class="button-chat" >&#11166;</button>
+            </div>
+        </form>    
+    </section>
+    <section></section>
+</body>
+<script src="static/functions/chat.js" type="module"></script>
+
+{% endblock %}

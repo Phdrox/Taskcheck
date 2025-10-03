@@ -1,0 +1,25 @@
+{% extends "home.html" %}
+
+{% block content%}
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/user.css')}}" type="text/css">
+</head>
+<section>
+   <form action="/updateuser" method="POST">
+     <div class="block-input">
+        <label>Nome</label>
+        <input type="text" name="update-name" id="" value="{{session['user']['name']}}">
+     </div>
+     <div class="block-input">
+     <label>Email</label>
+     <input type="email" name="update-email" value="{{session['user']['email']}}">
+     </div>
+     <span>
+        <button type="button" id="button-delete">Deletar Conta</button>
+        <button type="submit">Salvar</button>
+     </span>
+   </form>
+   <script src="{{url_for('static', filename='functions/user.js')}}"></script>
+</section>
+   
+{% endblock %}

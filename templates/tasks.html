@@ -1,0 +1,45 @@
+ {% extends "home.html" %}
+ 
+ {% block content %}
+    <head>
+        <link rel="stylesheet" href="static/styles/tasks.css" type="text/css">
+    </head>
+    <section>
+    <button id="buttonModal">Criar Tarefa </button>
+    <dialog id="dialog-register" >
+         <form action="/registertask" class="form-register" method="POST">
+            <span><button type="button" id="buttonClose">X</button></span>
+            <div class="divModal">
+                <span id="input-hour">
+                    <input type="text" name="nametask" placeholder="Titulo da tarefa" required>
+                    <input type="time" name="hour_task" id="hour-input" required >
+                    <select name="week" id="week_task" required>
+                        <option disabled selected>Selecione uma semana</option>
+                        <option value="Dom">Domigo</option>
+                        <option value="Seg">Segunda</option>
+                        <option value="Ter">Terça</option>
+                        <option value="Qua">Quarta</option>
+                        <option value="Qui">Quinta</option>
+                        <option value="Sex">Sexta</option>
+                        <option value="Sab">Sábado</option>
+                    </select>
+                </span>
+                <textarea name="descriptiontask" placeholder="Escreva descrição da tarefa..." ></textarea>
+                <button type="submit" id="create-task">Criar Tarefa</button>
+            </div>
+        </form>
+    </dialog>
+    <div class="calender">
+        <div class="container-week" ><h1>Dom</h1><div class="week-name" id="dom-week" data-name="Dom" ></span></div></div>
+        <div class="container-week" ><h1>Seg</h1><div class="week-name" id="seg-week" data-name="Seg" ></div></div>
+        <div class="container-week"><h1>Ter</h1><div class="week-name" id="ter-week" data-name="Ter" ></div></div>
+        <div class="container-week"><h1>Qua</h1><div class="week-name" id="qua-week" data-name="Qua" ></div></div>
+        <div class="container-week"><h1>Qui</h1><div class="week-name" id="qui-week" data-name="Qui" ></div></div>
+        <div class="container-week"><h1>Sex</h1><div class="week-name" id="sex-week" data-name="Sex" ></div></div>
+        <div class="container-week"><h1>Sáb</h1><div class="week-name" id="sab-week" data-name="Sab" ></div></div>
+    </div>
+    </section>
+    
+    <script src="static/functions/registerModal.js"></script>
+    <script src="static/functions/task.js"></script>
+{% endblock %}
