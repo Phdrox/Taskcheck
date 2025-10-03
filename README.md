@@ -30,5 +30,5 @@ de controle de versões.
 ![Task6](/TaskcheckImages/Captura_6.png)
 ![Task7](/TaskcheckImages/Captura_7.png)
 ![Task8](/TaskcheckImages/Captura_8.png)
-![Task9](/TaskcheckImages/Captura_9.png)
+
 
