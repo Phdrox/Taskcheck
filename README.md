@@ -17,6 +17,9 @@ de configuração de usuário.
 [X] Atualizar dados de usário ou Deletar conta
 [X] Chat com IA (Inserir chave do Gemini IA) no arquivo .env
 
+## Images
+![Task](/TaskcheckImages/Captura de Tela(3).jpeg)
+
 
 ## Sobre a Aplicação
 Ela foi realizada no intuto de ser um projeto pessoal, porém, com futuras atualizações para correção de bugs,
