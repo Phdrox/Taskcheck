@@ -18,7 +18,7 @@ de configuração de usuário.
 [X] Chat com IA (Inserir chave do Gemini IA) no arquivo .env
 
 ## Images
-![Task](/TaskcheckImages/Captura de Tela(3).jpeg)
+![Task](/TaskcheckImages/Captura de Tela (10).png)
 
 
 ## Sobre a Aplicação
